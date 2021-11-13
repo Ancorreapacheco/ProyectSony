@@ -6,18 +6,26 @@ function App(){
 
 
   useEffect(()=>{
-    fetch("/").then(
+    fetch("/api").then(
       response => response.json()
     ).then(
       data=>{
         setBackendData(data)
       }
     )
-  },[])
+  }, [])
 
   return(
     <div>
-
+      {(typeof backendData.users === 'undefined')?(
+        <p>
+          Loading...
+        </p>
+      ):(
+        backendData.users.map((user, i)=>(
+          <p>{user}</p>
+        ))
+      )}
     </div>
   )
 }
