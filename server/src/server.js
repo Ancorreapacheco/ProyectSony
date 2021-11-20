@@ -24,6 +24,9 @@ app.get("/api", (req,res)=>{
     res.json({"users":["userone","usertwo","usertree"]})
 })
 
+// Server listen port
+
 app.listen(app.get('port'), ()=>{
     console.log("Server on port", app.get('port'));
 })
+
