@@ -8,7 +8,6 @@ import { Projects } from './layout/Projects';
 import { Task } from './layout/Task';
 import { Createproject } from './layout/Createproject';
 import { Notifications } from './layout/Notifications';
-import { Admin } from './Admin';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App(){
@@ -25,7 +24,6 @@ function App(){
           <Route exact path='/projects/create/task' element={<Task />} />
           <Route exact path='/projects/create' element={<Createproject />} />
           <Route exact path='/notifications' element={<Notifications />} />
-          <Route exact path='/adminsite' element={<Admin/>}/>
         </Routes>
       </Fragment>
     </Router>
