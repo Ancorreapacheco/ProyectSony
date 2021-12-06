@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import './css/style_main.css';
 import Logo from './images/logosony.png';
+import Lina from './images/lina.jpg';
+import Kevin from './images/Kevin.jpg';
 
 export const Cuenta = () => {
     return (
@@ -197,16 +199,16 @@ export const Cuenta = () => {
                         <div class="row gx-4 mb-2">
                             <div class="col-auto">
                                 <div class="avatar avatar-xl position-relative">
-                                    <img src="../assets/img/bruce-mars.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm"></img>
+                                    <img src={ Lina } alt="profile_image" class="w-100 border-radius-lg shadow-sm"></img>
                                 </div>
                             </div>
                             <div class="col-auto my-auto">
                                 <div class="h-100">
                                     <h5 class="mb-1">
-                                        Richard Davis
+                                        Lina Florez
                                     </h5>
                                     <p class="mb-0 font-weight-normal text-sm">
-                                        CEO / Co-Founder
+                                        Usuario Lider
                                     </p>
                                 </div>
                             </div>
@@ -216,19 +218,19 @@ export const Cuenta = () => {
                                         <li class="nav-item">
                                             <a class="nav-link mb-0 px-0 py-1 active " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true">
                                                 <i class="material-icons text-lg position-relative">home</i>
-                                                <span class="ms-1">App</span>
+                                                <span class="ms-1">Inicio</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link mb-0 px-0 py-1 " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
                                                 <i class="material-icons text-lg position-relative">email</i>
-                                                <span class="ms-1">Messages</span>
+                                                <span class="ms-1">Mensajes</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link mb-0 px-0 py-1 " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
                                                 <i class="material-icons text-lg position-relative">settings</i>
-                                                <span class="ms-1">Settings</span>
+                                                <span class="ms-1">Ajustes</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -240,48 +242,48 @@ export const Cuenta = () => {
                                 <div class="col-12 col-xl-4">
                                     <div class="card card-plain h-100">
                                         <div class="card-header pb-0 p-3">
-                                            <h6 class="mb-0">Platform Settings</h6>
+                                            <h6 class="mb-0">Ajustes de plataforma</h6>
                                         </div>
                                         <div class="card-body p-3">
-                                            <h6 class="text-uppercase text-body text-xs font-weight-bolder">Account</h6>
+                                            <h6 class="text-uppercase text-body text-xs font-weight-bolder">Cuenta</h6>
                                             <ul class="list-group">
                                                 <li class="list-group-item border-0 px-0">
                                                     <div class="form-check form-switch ps-0">
-                                                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault" checked></input>
-                                                        <label class ="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault">Email me when someone follows me</label>
+                                                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault" ></input>
+                                                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault">Envíame un correo electrónico cuando alguien me siga</label>
                                                     </div>
                                                 </li>
                                                 <li class="list-group-item border-0 px-0">
                                                     <div class="form-check form-switch ps-0">
                                                         <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault1"></input>
-                                                        <label class ="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault1">Email me when someone answers on my post</label>
+                                                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault1">Envíame un correo electrónico cuando alguien responda a mi publicación</label>
                                                     </div>
                                                 </li>
                                                 <li class="list-group-item border-0 px-0">
                                                     <div class="form-check form-switch ps-0">
-                                                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault2" checked></input>
-                                                        <label class ="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault2">Email me when someone mentions me</label>
+                                                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault2" ></input>
+                                                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault2">Envíame un correo electrónico cuando alguien me mencione</label>
                                                     </div>
                                                 </li>
                                             </ul>
-                                            <h6 class="text-uppercase text-body text-xs font-weight-bolder mt-4">Application</h6>
+                                            <h6 class="text-uppercase text-body text-xs font-weight-bolder mt-4">Aplicación</h6>
                                             <ul class="list-group">
                                                 <li class="list-group-item border-0 px-0">
                                                     <div class="form-check form-switch ps-0">
                                                         <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault3"></input>
-                                                        <label class ="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault3">New launches and projects</label>
+                                                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault3">Nuevos lanzamientos y proyectos</label>
                                                     </div>
                                                 </li>
                                                 <li class="list-group-item border-0 px-0">
                                                     <div class="form-check form-switch ps-0">
-                                                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault4" checked></input>
-                                                        <label class ="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault4">Monthly product updates</label>
+                                                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault4" ></input>
+                                                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault4">Actualizaciones mensuales de productos</label>
                                                     </div>
                                                 </li>
                                                 <li class="list-group-item border-0 px-0 pb-0">
                                                     <div class="form-check form-switch ps-0">
                                                         <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault5"></input>
-                                                        <label class ="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault5">Subscribe to newsletter</label>
+                                                        <label class ="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault5">Suscribirse al boletín</label>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -293,7 +295,7 @@ export const Cuenta = () => {
                                         <div class="card-header pb-0 p-3">
                                             <div class="row">
                                                 <div class="col-md-8 d-flex align-items-center">
-                                                    <h6 class="mb-0">Profile Information</h6>
+                                                    <h6 class="mb-0">Bibliografía</h6>
                                                 </div>
                                                 <div class="col-md-4 text-end">
                                                     <a href="javascript:;">
@@ -304,26 +306,28 @@ export const Cuenta = () => {
                                         </div>
                                         <div class="card-body p-3">
                                             <p class="text-sm">
-                                                Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
+                                                Hola, soy Lina Florez, Decisiones: si no puede decidir, la respuesta es no.
+                                                Si dos caminos igualmente difíciles, elija el más doloroso en el corto
+                                                término (evitar el dolor es crear una ilusión de igualdad).
                                             </p>
                                             <hr class="horizontal gray-light my-4"></hr>
                                             <ul class ="list-group">
-                                            <li class ="list-group-item border-0 ps-0 pt-0 text-sm"><strong class ="text-dark">Full Name: </strong> &nbsp; Alec M.Thompson</li>
-                                            <li class ="list-group-item border-0 ps-0 text-sm"><strong class ="text-dark">Mobile: </strong> &nbsp; (44) 123 1234 123</li>
-                                            <li class ="list-group-item border-0 ps-0 text-sm"><strong class ="text-dark">Email: </strong> &nbsp; alecthompson @mail.com</li>
-                                            <li class ="list-group-item border-0 ps-0 text-sm"><strong class ="text-dark">Location: </strong> &nbsp; USA</li>
-                                            <li class ="list-group-item border-0 ps-0 pb-0">
-                                            <strong class ="text-dark text-sm">Social: </strong> &nbsp;
-                                            <a class ="btn btn-facebook btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
-                                            <i class ="fab fa-facebook fa-lg"></i>
-                                            </a>
-                                            <a class ="btn btn-twitter btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
-                                            <i class ="fab fa-twitter fa-lg"></i>
-                                            </a>
-                                            <a class ="btn btn-instagram btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
-                                            <i class ="fab fa-instagram fa-lg"></i>
-                                            </a>
-                                            </li>
+                                                <li class ="list-group-item border-0 ps-0 pt-0 text-sm"><strong class ="text-dark">Nombre completo: </strong> &nbsp; Lina Andres Florez Albanes</li>
+                                                <li class ="list-group-item border-0 ps-0 text-sm"><strong class ="text-dark">Celular: </strong> &nbsp; (44) 123 1234 123</li>
+                                                <li class ="list-group-item border-0 ps-0 text-sm"><strong class ="text-dark">Email: </strong> &nbsp; lalbanes@uninorte.edu.co</li>
+                                                <li class ="list-group-item border-0 ps-0 text-sm"><strong class ="text-dark">Ubicación: </strong> &nbsp; Medellín, COL</li>
+                                                <li class ="list-group-item border-0 ps-0 pb-0">
+                                                    <strong class ="text-dark text-sm">Redes sociales </strong> &nbsp;
+                                                    <a class ="btn btn-facebook btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
+                                                        <i class ="fab fa-facebook fa-lg"></i>
+                                                    </a>
+                                                    <a class ="btn btn-twitter btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
+                                                        <i class ="fab fa-twitter fa-lg"></i>
+                                                    </a>
+                                                    <a class ="btn btn-instagram btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
+                                                        <i class ="fab fa-instagram fa-lg"></i>
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -331,59 +335,59 @@ export const Cuenta = () => {
                                 <div class="col-12 col-xl-4">
                                     <div class="card card-plain h-100">
                                         <div class="card-header pb-0 p-3">
-                                            <h6 class="mb-0">Conversations</h6>
+                                            <h6 class="mb-0">Conversaciones</h6>
                                         </div>
                                         <div class="card-body p-3">
                                             <ul class="list-group">
                                                 <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2 pt-0">
                                                     <div class="avatar me-3">
-                                                        <img src="../assets/img/kal-visuals-square.jpg" alt="kal" class="border-radius-lg shadow"></img>
+                                                        <img src={ Kevin } alt="kal" class="border-radius-lg shadow"></img>
                                                     </div>
                                                     <div class="d-flex align-items-start flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Sophie B.</h6>
-                                                        <p class="mb-0 text-xs">Hi! I need more information..</p>
+                                                        <h6 class="mb-0 text-sm">Kevin Q.</h6>
+                                                        <p class="mb-0 text-xs">Hola, necesito más información..</p>
                                                     </div>
-                                                    <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Reply</a>
+                                                    <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Contestar</a>
                                                 </li>
                                                 <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                                                     <div class="avatar me-3">
                                                         <img src="../assets/img/marie.jpg" alt="kal" class="border-radius-lg shadow"></img>
                                                     </div>
                                                     <div class="d-flex align-items-start flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Anne Marie</h6>
-                                                        <p class="mb-0 text-xs">Awesome work, can you..</p>
+                                                        <h6 class="mb-0 text-sm">Andrés C.</h6>
+                                                        <p class="mb-0 text-xs">Excelente trabajo, puedes..</p>
                                                     </div>
-                                                    <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Reply</a>
+                                                    <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Contestar</a>
                                                 </li>
                                                 <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                                                     <div class="avatar me-3">
                                                         <img src="../assets/img/ivana-square.jpg" alt="kal" class="border-radius-lg shadow"></img>
                                                     </div>
                                                     <div class="d-flex align-items-start flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Ivanna</h6>
-                                                        <p class="mb-0 text-xs">About files I can..</p>
+                                                        <h6 class="mb-0 text-sm">Yulieth Z.</h6>
+                                                        <p class="mb-0 text-xs">Sonre los archivos, yo..</p>
                                                     </div>
-                                                    <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Reply</a>
+                                                    <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Contestar</a>
                                                 </li>
                                                 <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                                                     <div class="avatar me-3">
                                                         <img src="../assets/img/team-4.jpg" alt="kal" class="border-radius-lg shadow"></img>
                                                     </div>
                                                     <div class="d-flex align-items-start flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Peterson</h6>
-                                                        <p class="mb-0 text-xs">Have a great afternoon..</p>
+                                                        <h6 class="mb-0 text-sm">Jesus M.</h6>
+                                                        <p class="mb-0 text-xs">Excelente tarde..</p>
                                                     </div>
-                                                    <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Reply</a>
+                                                    <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Contestar</a>
                                                 </li>
                                                 <li class="list-group-item border-0 d-flex align-items-center px-0">
                                                     <div class="avatar me-3">
                                                         <img src="../assets/img/team-3.jpg" alt="kal" class="border-radius-lg shadow"></img>
                                                     </div>
                                                     <div class="d-flex align-items-start flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Nick Daniel</h6>
-                                                        <p class="mb-0 text-xs">Hi! I need more information..</p>
+                                                        <h6 class="mb-0 text-sm">Abraham R.</h6>
+                                                        <p class="mb-0 text-xs">Hola! Quiero conoc..</p>
                                                     </div>
-                                                    <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Reply</a>
+                                                    <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Contestar</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -391,29 +395,29 @@ export const Cuenta = () => {
                                 </div>
                                 <div class="col-12 mt-4">
                                     <div class="mb-5 ps-3">
-                                        <h6 class="mb-1">Projects</h6>
-                                        <p class="text-sm">Architects design houses</p>
+                                        <h6 class="mb-1">Proyectos</h6>
+                                        <p class="text-sm">FrontEnds en desarrollo</p>
                                     </div>
                                     <div class="row">
                                         <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
                                             <div class="card card-blog card-plain">
                                                 <div class="card-header p-0 mt-n4 mx-3">
                                                     <a class="d-block shadow-xl border-radius-xl">
-                                                        <img src="../assets/img/home-decor-1.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl"></img>
+                                                        <img src="https://miro.medium.com/max/2000/1*ghfEivqtCdLAFXbgBDEoyw.png" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl"></img>
                                                     </a>
                                                 </div>
                                                 <div class="card-body p-3">
-                                                    <p class="mb-0 text-sm">Project #2</p>
+                                                    <p class="mb-0 text-sm">Proyecto #2</p>
                                                     <a href="javascript:;">
                                                         <h5>
-                                                            Modern
+                                                            Estático
                                                         </h5>
                                                     </a>
                                                     <p class="mb-4 text-sm">
                                                         As Uber works through a huge amount of internal management turmoil.
                                                     </p>
                                                     <div class="d-flex align-items-center justify-content-between">
-                                                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">View Project</button>
+                                                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">Ver proyecto</button>
                                                         <div class="avatar-group mt-2">
                                                             <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elena Morison">
                                                                 <img alt="Image placeholder" src="../assets/img/team-1.jpg"></img>
@@ -436,21 +440,21 @@ export const Cuenta = () => {
                                             <div class="card card-blog card-plain">
                                                 <div class="card-header p-0 mt-n4 mx-3">
                                                     <a class="d-block shadow-xl border-radius-xl">
-                                                        <img src="../assets/img/home-decor-2.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg"></img>
+                                                        <img src="https://www.reactjsindia.com/blog/wp-content/uploads/2021/05/Everything-to-know-about-ReactJs-Web-App-Development.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg"></img>
                                                     </a>
                                                 </div>
                                                 <div class="card-body p-3">
-                                                    <p class="mb-0 text-sm">Project #1</p>
+                                                    <p class="mb-0 text-sm">Proyecto #1</p>
                                                     <a href="javascript:;">
                                                         <h5>
-                                                            Scandinavian
+                                                            Dinámico
                                                         </h5>
                                                     </a>
                                                     <p class="mb-4 text-sm">
                                                         Music is something that every person has his or her own specific opinion about.
                                                     </p>
                                                     <div class="d-flex align-items-center justify-content-between">
-                                                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">View Project</button>
+                                                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</button>
                                                         <div class="avatar-group mt-2">
                                                             <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nick Daniel">
                                                                 <img alt="Image placeholder" src="../assets/img/team-3.jpg"></img>
@@ -473,21 +477,21 @@ export const Cuenta = () => {
                                             <div class="card card-blog card-plain">
                                                 <div class="card-header p-0 mt-n4 mx-3">
                                                     <a class="d-block shadow-xl border-radius-xl">
-                                                        <img src="../assets/img/home-decor-3.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl"></img>
+                                                        <img src="https://i.ytimg.com/vi/NO2DaxhoWHk/maxresdefault.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl"></img>
                                                     </a>
                                                 </div>
                                                 <div class="card-body p-3">
-                                                    <p class="mb-0 text-sm">Project #3</p>
+                                                    <p class="mb-0 text-sm">Proyecto #3</p>
                                                     <a href="javascript:;">
                                                         <h5>
-                                                            Minimalist
+                                                            Aplicación
                                                         </h5>
                                                     </a>
                                                     <p class="mb-4 text-sm">
                                                         Different people have different taste, and various types of music.
                                                     </p>
                                                     <div class="d-flex align-items-center justify-content-between">
-                                                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">View Project</button>
+                                                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</button>
                                                         <div class="avatar-group mt-2">
                                                             <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
                                                                 <img alt="Image placeholder" src="../assets/img/team-4.jpg"></img>
@@ -510,21 +514,21 @@ export const Cuenta = () => {
                                             <div class="card card-blog card-plain">
                                                 <div class="card-header p-0 mt-n4 mx-3">
                                                     <a class="d-block shadow-xl border-radius-xl">
-                                                        <img src="https://images.unsplash.com/photo-1606744824163-985d376605aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl"></img>
+                                                        <img src="https://3.bp.blogspot.com/-co9IzI0I4mI/XGS3iyQi1sI/AAAAAAAAFo4/RhLWOcJeBvE3XzBIy8akSmTZ5TTGgRJEwCLcBGAs/s1600/maxresdefault.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl"></img>
                                                     </a>
                                                 </div>
                                                 <div class="card-body p-3">
-                                                    <p class="mb-0 text-sm">Project #4</p>
+                                                    <p class="mb-0 text-sm">Proyecto #4</p>
                                                     <a href="javascript:;">
                                                         <h5>
-                                                            Gothic
+                                                            Dinámico
                                                         </h5>
                                                     </a>
                                                     <p class="mb-4 text-sm">
                                                         Why would anyone pick blue over pink? Pink is obviously a better color.
                                                     </p>
                                                     <div class="d-flex align-items-center justify-content-between">
-                                                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">View Project</button>
+                                                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</button>
                                                         <div class="avatar-group mt-2">
                                                             <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
                                                                 <img alt="Image placeholder" src="../assets/img/team-4.jpg"></img>
@@ -549,42 +553,10 @@ export const Cuenta = () => {
                         </div>
                     </div>
                 </div>
-                <footer class="footer py-4  ">
-                    <div class="container-fluid">
-                        <div class="row align-items-center justify-content-lg-between">
-                            <div class="col-lg-6 mb-lg-0 mb-4">
-                                <div class="copyright text-center text-sm text-muted text-lg-start">
-                                    © <script>
-                                        document.write(new Date().getFullYear())
-                                    </script>,
-                                    made with <i class="fa fa-heart"></i> by
-                                    <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
-                                    for a better web.
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                                    <li class="nav-item">
-                                        <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">License</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
             </div>
             <div class="fixed-plugin">
                 <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
-                    <i class="material-icons py-2">settings</i>
+                    <i class="material-icons py-2">Ajustes</i>
                 </a>
                 <div class="card shadow-lg">
                     <div class="card-header pb-0 pt-3">
@@ -602,50 +574,50 @@ export const Cuenta = () => {
                     <hr class="horizontal dark my-1"></hr>
                     <div class ="card-body pt-sm-3 pt-0">
                     {/*<!--Sidebar Backgrounds-->*/}
-                    <div>
-                    <h6 class ="mb-0">Sidebar Colors</h6>
-                    </div>
-                    <a href="javascript:void(0)" class ="switch-trigger background-color">
-                    <div class ="badge-colors my-2 text-start">
-                    <span class ="badge filter bg-gradient-primary active" data-color="primary" onclick="sidebarColor(this)"></span>
-                    <span class ="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
-                    <span class ="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
-                    <span class ="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
-                    <span class ="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
-                    <span class ="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
-                    </div>
-                    </a>
+                        <div>
+                            <h6 class ="mb-0">Sidebar Colors</h6>
+                        </div>
+                        <a href="javascript:void(0)" class ="switch-trigger background-color">
+                            <div class ="badge-colors my-2 text-start">
+                                <span class ="badge filter bg-gradient-primary active" data-color="primary" onclick="sidebarColor(this)"></span>
+                                <span class ="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
+                                <span class ="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
+                                <span class ="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
+                                <span class ="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
+                                <span class ="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
+                            </div>
+                        </a>
                     {/*<!--Sidenav Type-->*/}
-                    <div class ="mt-3">
-                    <h6 class ="mb-0">Sidenav Type</h6>
-                    <p class ="text-sm">Choose between 2 different sidenav types.</p>
-                    </div>
-                    <div class ="d-flex">
-                    <button class ="btn bg-gradient-dark px-3 mb-2 active" data-class ="bg-gradient-dark" onclick="sidebarType(this)">Dark</button>
-                    <button class ="btn bg-gradient-dark px-3 mb-2 ms-2" data-class ="bg-transparent" onclick="sidebarType(this)">Transparent</button>
-                    <button class ="btn bg-gradient-dark px-3 mb-2 ms-2" data-class ="bg-white" onclick="sidebarType(this)">White</button>
-                    </div>
-                    <p class ="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
+                        <div class ="mt-3">
+                            <h6 class ="mb-0">Sidenav Type</h6>
+                            <p class ="text-sm">Choose between 2 different sidenav types.</p>
+                        </div>
+                        <div class ="d-flex">
+                            <button class ="btn bg-gradient-dark px-3 mb-2 active" data-class ="bg-gradient-dark" onclick="sidebarType(this)">Dark</button>
+                            <button class ="btn bg-gradient-dark px-3 mb-2 ms-2" data-class ="bg-transparent" onclick="sidebarType(this)">Transparent</button>
+                            <button class ="btn bg-gradient-dark px-3 mb-2 ms-2" data-class ="bg-white" onclick="sidebarType(this)">White</button>
+                        </div>
+                        <p class ="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
                     {/*<!--Navbar Fixed-->*/}
-                    <hr class ="horizontal dark my-3"></hr>
-                    <div class ="mt-2 d-flex">
-                    <h6 class ="mb-0">Light / Dark</h6>
-                    <div class ="form-check form-switch ps-0 ms-auto my-auto">
-                    <input class ="form-check-input mt-1 ms-auto" type ="checkbox" id="dark-version" onclick="darkMode(this)"></input>
-                    </div>
-                    </div>
-                    <hr class ="horizontal dark my-sm-4"></hr>
-                    <a class ="btn btn-outline-dark w-100" href="">View documentation</a>
-                    <div class ="w-100 text-center">
-                    <a class ="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star creativetimofficial/material-dashboard on GitHub">Star</a>
-                    <h6 class ="mt-3">Thank you for sharing!</h6>
-                    <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard" class ="btn btn-dark mb-0 me-2" target="_blank">
-                    <i class ="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
-                    </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-dashboard" class ="btn btn-dark mb-0 me-2" target="_blank">
-                    <i class ="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
-                    </a>
-                    </div>
+                        <hr class ="horizontal dark my-3"></hr>
+                        <div class ="mt-2 d-flex">
+                            <h6 class ="mb-0">Light / Dark</h6>
+                            <div class ="form-check form-switch ps-0 ms-auto my-auto">
+                                <input class ="form-check-input mt-1 ms-auto" type ="checkbox" id="dark-version" onclick="darkMode(this)"></input>
+                            </div>
+                        </div>
+                        <hr class ="horizontal dark my-sm-4"></hr>
+                        <a class ="btn btn-outline-dark w-100" href="">View documentation</a>
+                        <div class ="w-100 text-center">
+                            <a class ="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star creativetimofficial/material-dashboard on GitHub">Star</a>
+                                <h6 class ="mt-3">Thank you for sharing!</h6>
+                            <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard" class ="btn btn-dark mb-0 me-2" target="_blank">
+                                <i class ="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-dashboard" class ="btn btn-dark mb-0 me-2" target="_blank">
+                                <i class ="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
+                            </a>
+                        </div>
                     </div>
                     </div>
                 </div>
