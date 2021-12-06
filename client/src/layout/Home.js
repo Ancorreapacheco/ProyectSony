@@ -191,9 +191,31 @@ export const Home = () => {
                 </nav>
                 <br></br>
                 <img src={ Logo } style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '8%' }}></img>
-                <h1 style={{ textAlign: 'center' }}>
+                <h1 style={{ textAlign: 'center', color: 'black'}}>
                     Plataforma de gestión de proyectos Sony
                 </h1>
+                <br></br>
+                <div >
+                    <div style={{ float: 'left', width: '50%', height: '500px',padding: '10px' }}>
+                        <h4 style={{ textAlign: 'justify' , color: 'black'}}>
+                            Sony es una plataforma dedicada a gestionar y facilitar el anvance de trabajo en los equipos.
+                            Colaborar, gestionar proyectos, y alcanzar nuevos picos de productividad deseada.
+                            Desde diversos lugares del globo hasta el trabajo en casa, Sony genera nuevas formas en que tu equipo
+                            pueda trabajar en colaboración y de forma única.
+                        </h4>
+                    </div>
+                    <div style={{ float: 'left', width: '50%', height: '500px', padding: '10px' }}>
+                        <img src="http://www.ricardosalinas.com/blog/images/fotoblogene2709.png" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '500px', borderRadius: '15px' }}></img>
+                    </div>
+                </div>
+                <br></br>
+                
+                <h3 style={{ textAlign: 'center', color: 'black'}}>
+                    Es más que trabajo. Es una forma de trabajar juntos
+                </h3>
+                <h5 style={{ textAlign: 'center', color: 'black'}}>
+                    Gestión de proyectos, organizador de tareas, y constructor de espiritu de trabajo <strong>en un solo lugar</strong>.
+                </h5>
             </main>
         </div>
     )
