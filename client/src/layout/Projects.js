@@ -78,6 +78,14 @@ export const Projects = () => {
                                 <span className="nav-link-text ms-1">Iniciar Sesión</span>
                             </Link>
                         </li>
+                        <li class="nav-item">
+                            <Link class="nav-link text-white " to="/register">
+                                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                    <i class="material-icons opacity-10">assignment</i>
+                                </div>
+                                <span class="nav-link-text ms-1">Registrarse</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="sidenav-footer position-absolute w-100 bottom-0 ">
@@ -92,6 +100,13 @@ export const Projects = () => {
                 <nav className="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
                     <div className="container-fluid py-1 px-3">
                         <div className="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                            <div>
+                                <Link to='/projects/create'>
+                                    <button style={{ borderRadius: '15px', width: '220px', height: '70px', background: '#E73872' , color: 'white', fontWeight: '450'}}>
+                                    Crear nuevo proyecto
+                                    </button>
+                                </Link>
+                            </div>
                             <div className="ms-md-auto pe-md-3 d-flex align-items-center">
                                 <div className="input-group input-group-outline">
                                     <label className="form-label">Buscando...</label>

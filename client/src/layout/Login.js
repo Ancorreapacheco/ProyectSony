@@ -42,6 +42,12 @@ export const Login = () => {
                                                 Perfil de usuario
                                             </Link>
                                         </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link me-2" to="/register">
+                                                <i className="fa fa-user-plus opacity-6 text-dark me-1"></i>
+                                                Registrarse
+                                            </Link>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

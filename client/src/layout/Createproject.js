@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './css/style_main.css';
 import Logo from './images/logosony.png';
 
-export const Home = () => {
+export const Createproject = () => {
     return (
         <div>
             <aside className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
@@ -19,7 +19,7 @@ export const Home = () => {
                 <div className="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link className="nav-link text-white active bg-gradient-primary" to="/">
+                            <Link className="nav-link text-white " to="/">
                                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                     <i className="material-icons opacity-10">receipt_long</i>
                                 </div>
@@ -35,7 +35,7 @@ export const Home = () => {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white " to="/projects">
+                            <Link className="nav-link text-white active bg-gradient-primary" to="/projects">
                                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                     <i className="material-icons opacity-10">table_view</i>
                                 </div>
@@ -88,8 +88,7 @@ export const Home = () => {
                     </div>
                 </div>
             </aside>
-            <main className="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-                {/* Navbar */}
+            <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
                 <nav className="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
                     <div className="container-fluid py-1 px-3">
                         <div className="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
@@ -197,36 +196,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </nav>
-                <br></br>
-                <img src={ Logo } style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '8%' }}></img>
-                <h1 style={{ textAlign: 'center', color: 'black'}}>
-                    Plataforma de gestión de proyectos Sony
-                </h1>
-                <br></br>
-                <div >
-                    <div style={{ float: 'left', width: '50%', height: '500px',padding: '10px' }}>
-                        <br></br>
-                        <br></br>
-                        <h4 style={{ textAlign: 'justify' , color: 'black'}}>
-                            Sony es una plataforma dedicada a gestionar y facilitar el anvance de trabajo en los equipos.
-                            Colaborar, gestionar proyectos, y alcanzar nuevos picos de productividad deseada.
-                            Desde diversos lugares del globo hasta el trabajo en casa, Sony genera nuevas formas en que tu equipo
-                            pueda trabajar en colaboración y de forma única.
-                        </h4>
-                    </div>
-                    <div style={{ float: 'left', width: '50%', height: '500px', padding: '10px' }}>
-                        <img src="http://www.ricardosalinas.com/blog/images/fotoblogene2709.png" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '500px', borderRadius: '15px' }}></img>
-                    </div>
-                </div>
-                <br></br>
-                
-                <h3 style={{ textAlign: 'center', color: 'black'}}>
-                    Es más que trabajo. Es una forma de trabajar juntos
-                </h3>
-                <h5 style={{ textAlign: 'center', color: 'black'}}>
-                    Gestión de proyectos, organizador de tareas, y constructor de espiritu de trabajo <strong>en un solo lugar</strong>.
-                </h5>
-            </main>
+            </main>    
         </div>
     )
 }
