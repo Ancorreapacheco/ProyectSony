@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 
 import './css/style_main.css';
 import Logo from './images/logosony.png';
+import XD from './images/small-logos/logo-xd.svg';
+import AT from './images/small-logos/logo-atlassian.svg';
+import SL from './images/small-logos/logo-slack.svg';
+import SP from './images/small-logos/logo-spotify.svg';
+import JI from './images/small-logos/logo-jira.svg';
+import IN from './images/small-logos/logo-invision.svg';
 
 export const Dashboard = () => {
     return (
@@ -35,7 +41,7 @@ export const Dashboard = () => {
                             </Link>
                         </li>
                         <li className ="nav-item">
-                            <Link className ="nav-link text-white " to="/">
+                            <Link className ="nav-link text-white " to="/projects">
                                 <div className ="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                     <i className ="material-icons opacity-10">table_view</i>
                                 </div>
@@ -199,13 +205,13 @@ export const Dashboard = () => {
                                         <i className="material-icons opacity-10">weekend</i>
                                     </div>
                                     <div className="text-end pt-1">
-                                        <p className="text-sm mb-0 text-capitalize">Today's Money</p>
-                                        <h4 className="mb-0">$53k</h4>
+                                        <p className="text-sm mb-0 text-capitalize">Proyectos actuales</p>
+                                        <h4 className="mb-0">530</h4>
                                     </div>
                                 </div>
                                 <hr className="dark horizontal my-0"></hr>
                                 <div className ="card-footer p-3">
-                                <p className ="mb-0"><span className ="text-success text-sm font-weight-bolder">+55% </span>than lask week</p>
+                                <p className ="mb-0"><span className ="text-success text-sm font-weight-bolder">+15% </span>que la semana pasadak</p>
                                 </div>
                             </div>
                         </div>
@@ -216,13 +222,13 @@ export const Dashboard = () => {
                                         <i className="material-icons opacity-10">person</i>
                                     </div>
                                     <div className="text-end pt-1">
-                                        <p className="text-sm mb-0 text-capitalize">Today's Users</p>
-                                        <h4 className="mb-0">2,300</h4>
+                                        <p className="text-sm mb-0 text-capitalize">Usuarios actuales</p>
+                                        <h4 className="mb-0">230</h4>
                                     </div>
                                 </div>
                                 <hr className="dark horizontal my-0"></hr>
                                 <div className ="card-footer p-3">
-                                <p className ="mb-0"><span className ="text-success text-sm font-weight-bolder">+3% </span>than lask month</p>
+                                <p className ="mb-0"><span className ="text-success text-sm font-weight-bolder">+3% </span>que el mes pasado</p>
                                 </div>
                             </div>
                         </div>
@@ -233,13 +239,13 @@ export const Dashboard = () => {
                                         <i className="material-icons opacity-10">person</i>
                                     </div>
                                     <div className="text-end pt-1">
-                                        <p className="text-sm mb-0 text-capitalize">New Clients</p>
+                                        <p className="text-sm mb-0 text-capitalize">Nuevos clientes</p>
                                         <h4 className="mb-0">3,462</h4>
                                     </div>
                                 </div>
                                 <hr className="dark horizontal my-0"></hr>
                                 <div className ="card-footer p-3">
-                                <p className ="mb-0"><span className ="text-danger text-sm font-weight-bolder">-2%</span> than yesterday</p>
+                                    <p className="mb-0"><span className="text-danger text-sm font-weight-bolder">-2%</span> que el mes pasado</p>
                                 </div>
                             </div>
                         </div>
@@ -250,13 +256,13 @@ export const Dashboard = () => {
                                         <i className="material-icons opacity-10">weekend</i>
                                     </div>
                                     <div className="text-end pt-1">
-                                        <p className="text-sm mb-0 text-capitalize">Sales</p>
-                                        <h4 className="mb-0">$103,430</h4>
+                                        <p className="text-sm mb-0 text-capitalize">Cleintes satisfechos</p>
+                                        <h4 className="mb-0">5000</h4>
                                     </div>
                                 </div>
                                 <hr className="dark horizontal my-0"></hr>
                                 <div className ="card-footer p-3">
-                                <p className ="mb-0"><span className ="text-success text-sm font-weight-bolder">+5% </span>than yesterday</p>
+                                <p className ="mb-0"><span className ="text-success text-sm font-weight-bolder">+5% </span>que ayer</p>
                                 </div>
                             </div>
                         </div>
@@ -272,12 +278,12 @@ export const Dashboard = () => {
                                     </div>
                                 </div>
                                 <div className="card-body">
-                                    <h6 className="mb-0 ">Website Views</h6>
-                                    <p className="text-sm ">Last Campaign Performance</p>
+                                    <h6 className="mb-0 ">Rendimiento proyecto</h6>
+                                    <p className="text-sm ">Último proyecto realizado</p>
                                     <hr className="dark horizontal"></hr>
                                     <div className ="d-flex ">
                                     <i className ="material-icons text-sm my-auto me-1">schedule</i>
-                                    <p className ="mb-0 text-sm"> campaign sent 2 days ago </p>
+                                    <p className ="mb-0 text-sm"> Proyecto finalizado hace 2 días </p>
                                     </div>
                                 </div>
                             </div>
@@ -292,12 +298,12 @@ export const Dashboard = () => {
                                     </div>
                                 </div>
                                 <div className="card-body">
-                                    <h6 className="mb-0 "> Daily Sales </h6>
-                                    <p className="text-sm "> (<span className="font-weight-bolder">+15%</span>) increase in today sales. </p>
+                                    <h6 className="mb-0 "> Usuarios activos </h6>
+                                    <p className="text-sm "> (<span className="font-weight-bolder">+15%</span>) incremento de actividades </p>
                                     <hr className="dark horizontal"></hr>
                                     <div className ="d-flex ">
                                     <i className ="material-icons text-sm my-auto me-1">schedule</i>
-                                    <p className ="mb-0 text-sm"> updated 4 min ago </p>
+                                    <p className ="mb-0 text-sm"> actualizado hace 4 min  </p>
                                     </div>
                                 </div>
                             </div>
@@ -312,12 +318,12 @@ export const Dashboard = () => {
                                     </div>
                                 </div>
                                 <div className="card-body">
-                                    <h6 className="mb-0 ">Completed Tasks</h6>
-                                    <p className="text-sm ">Last Campaign Performance</p>
+                                    <h6 className="mb-0 ">Tareas completadas</h6>
+                                    <p className="text-sm ">Último proyecto finalizado</p>
                                     <hr className="dark horizontal"></hr>
                                     <div className ="d-flex ">
                                     <i className ="material-icons text-sm my-auto me-1">schedule</i>
-                                    <p className ="mb-0 text-sm">just updated</p>
+                                    <p className ="mb-0 text-sm">recien actualizado</p>
                                     </div>
                                 </div>
                             </div>
@@ -329,10 +335,10 @@ export const Dashboard = () => {
                                 <div className="card-header pb-0">
                                     <div className="row">
                                         <div className="col-lg-6 col-7">
-                                            <h6>Projects</h6>
+                                            <h6>Proyectos</h6>
                                             <p className="text-sm mb-0">
                                                 <i className="fa fa-check text-info" aria-hidden="true"></i>
-                                                <span className="font-weight-bold ms-1">30 done</span> this month
+                                                <span className="font-weight-bold ms-1">30 terminados</span> este mes
                                             </p>
                                         </div>
                                         <div className="col-lg-6 col-5 my-auto text-end">
@@ -354,10 +360,10 @@ export const Dashboard = () => {
                                         <table className="table align-items-center mb-0">
                                             <thead>
                                                 <tr>
-                                                    <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Companies</th>
-                                                    <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Members</th>
-                                                    <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Budget</th>
-                                                    <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Completion</th>
+                                                    <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Proyecto</th>
+                                                    <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Usuarios activos</th>
+                                                    <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Días estimado</th>
+                                                    <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Estado de avance</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -365,7 +371,7 @@ export const Dashboard = () => {
                                                     <td>
                                                         <div className="d-flex px-2 py-1">
                                                             <div>
-                                                                <img src="./assets/img/small-logos/logo-xd.svg" className="avatar avatar-sm me-3" alt="xd"></img>
+                                                                <img src={ XD } className="avatar avatar-sm me-3" alt="xd"></img>
                                                             </div>
                                                             <div className="d-flex flex-column justify-content-center">
                                                                 <h6 className="mb-0 text-sm">Material XD Version</h6>
@@ -375,21 +381,21 @@ export const Dashboard = () => {
                                                     <td>
                                                         <div className="avatar-group mt-2">
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
-                                                                <img src="./assets/img/team-1.jpg" alt="team1"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="team1"></img>
                                                             </a>
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
-                                                                <img src="./assets/img/team-2.jpg" alt="team2"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="team2"></img>
                                                             </a>
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alexander Smith">
-                                                                <img src="./assets/img/team-3.jpg" alt="team3"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="team3"></img>
                                                             </a>
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-                                                                <img src="./assets/img/team-4.jpg" alt="team4"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="team4"></img>
                                                             </a>
                                                         </div>
                                                     </td>
                                                     <td className="align-middle text-center text-sm">
-                                                        <span className="text-xs font-weight-bold"> $14,000 </span>
+                                                        <span className="text-xs font-weight-bold"> 60 </span>
                                                     </td>
                                                     <td className="align-middle">
                                                         <div className="progress-wrapper w-75 mx-auto">
@@ -408,25 +414,25 @@ export const Dashboard = () => {
                                                     <td>
                                                         <div className="d-flex px-2 py-1">
                                                             <div>
-                                                                <img src="./assets/img/small-logos/logo-atlassian.svg" className="avatar avatar-sm me-3" alt="atlassian"></img>
+                                                                <img src={ AT } className="avatar avatar-sm me-3" alt="atlassian"></img>
                                                             </div>
                                                             <div className="d-flex flex-column justify-content-center">
-                                                                <h6 className="mb-0 text-sm">Add Progress Track</h6>
+                                                                <h6 className="mb-0 text-sm">Adicionar barra de progreso</h6>
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div className="avatar-group mt-2">
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
-                                                                <img src="./assets/img/team-2.jpg" alt="team5"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="team5"></img>
                                                             </a>
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-                                                                <img src="./assets/img/team-4.jpg" alt="team6"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="team6"></img>
                                                             </a>
                                                         </div>
                                                     </td>
                                                     <td className="align-middle text-center text-sm">
-                                                        <span className="text-xs font-weight-bold"> $3,000 </span>
+                                                        <span className="text-xs font-weight-bold"> 10 </span>
                                                     </td>
                                                     <td className="align-middle">
                                                         <div className="progress-wrapper w-75 mx-auto">
@@ -445,25 +451,25 @@ export const Dashboard = () => {
                                                     <td>
                                                         <div className="d-flex px-2 py-1">
                                                             <div>
-                                                                <img src="./assets/img/small-logos/logo-slack.svg" className="avatar avatar-sm me-3" alt="team7"></img>
+                                                                <img src={ SL } className="avatar avatar-sm me-3" alt="team7"></img>
                                                             </div>
                                                             <div className="d-flex flex-column justify-content-center">
-                                                                <h6 className="mb-0 text-sm">Fix Platform Errors</h6>
+                                                                <h6 className="mb-0 text-sm">Arreglar errores de plataforma</h6>
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div className="avatar-group mt-2">
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
-                                                                <img src="./assets/img/team-3.jpg" alt="team8"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="team8"></img>
                                                             </a>
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-                                                                <img src="./assets/img/team-1.jpg" alt="team9"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="team9"></img>
                                                             </a>
                                                         </div>
                                                     </td>
                                                     <td className="align-middle text-center text-sm">
-                                                        <span className="text-xs font-weight-bold"> Not set </span>
+                                                        <span className="text-xs font-weight-bold"> No fijado </span>
                                                     </td>
                                                     <td className="align-middle">
                                                         <div className="progress-wrapper w-75 mx-auto">
@@ -482,31 +488,31 @@ export const Dashboard = () => {
                                                     <td>
                                                         <div className="d-flex px-2 py-1">
                                                             <div>
-                                                                <img src="./assets/img/small-logos/logo-spotify.svg" className="avatar avatar-sm me-3" alt="spotify"></img>
+                                                                <img src={ SP } className="avatar avatar-sm me-3" alt="spotify"></img>
                                                             </div>
                                                             <div className="d-flex flex-column justify-content-center">
-                                                                <h6 className="mb-0 text-sm">Launch our Mobile App</h6>
+                                                                <h6 className="mb-0 text-sm">Desplegar aplicación móvil</h6>
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div className="avatar-group mt-2">
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
-                                                                <img src="./assets/img/team-4.jpg" alt="user1"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="user1"></img>
                                                             </a>
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
-                                                                <img src="./assets/img/team-3.jpg" alt="user2"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="user2"></img>
                                                             </a>
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alexander Smith">
-                                                                <img src="./assets/img/team-4.jpg" alt="user3"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="user3"></img>
                                                             </a>
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-                                                                <img src="./assets/img/team-1.jpg" alt="user4"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="user4"></img>
                                                             </a>
                                                         </div>
                                                     </td>
                                                     <td className="align-middle text-center text-sm">
-                                                        <span className="text-xs font-weight-bold"> $20,500 </span>
+                                                        <span className="text-xs font-weight-bold"> 180 </span>
                                                     </td>
                                                     <td className="align-middle">
                                                         <div className="progress-wrapper w-75 mx-auto">
@@ -525,22 +531,22 @@ export const Dashboard = () => {
                                                     <td>
                                                         <div className="d-flex px-2 py-1">
                                                             <div>
-                                                                <img src="./assets/img/small-logos/logo-jira.svg" className="avatar avatar-sm me-3" alt="jira"></img>
+                                                                <img src={ JI } className="avatar avatar-sm me-3" alt="jira"></img>
                                                             </div>
                                                             <div className="d-flex flex-column justify-content-center">
-                                                                <h6 className="mb-0 text-sm">Add the New Pricing Page</h6>
+                                                                <h6 className="mb-0 text-sm">Adicionar nuevos precios</h6>
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div className="avatar-group mt-2">
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
-                                                                <img src="./assets/img/team-4.jpg" alt="user5"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="user5"></img>
                                                             </a>
                                                         </div>
                                                     </td>
                                                     <td className="align-middle text-center text-sm">
-                                                        <span className="text-xs font-weight-bold"> $500 </span>
+                                                        <span className="text-xs font-weight-bold"> 60 </span>
                                                     </td>
                                                     <td className="align-middle">
                                                         <div className="progress-wrapper w-75 mx-auto">
@@ -559,25 +565,25 @@ export const Dashboard = () => {
                                                     <td>
                                                         <div className="d-flex px-2 py-1">
                                                             <div>
-                                                                <img src="./assets/img/small-logos/logo-invision.svg" className="avatar avatar-sm me-3" alt="invision"></img>
+                                                                <img src={ IN } className="avatar avatar-sm me-3" alt="invision"></img>
                                                             </div>
                                                             <div className="d-flex flex-column justify-content-center">
-                                                                <h6 className="mb-0 text-sm">Redesign New Online Shop</h6>
+                                                                <h6 className="mb-0 text-sm">Rediseñar tienda online</h6>
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div className="avatar-group mt-2">
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
-                                                                <img src="./assets/img/team-1.jpg" alt="user6"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="user6"></img>
                                                             </a>
                                                             <a href="javascript:;" className="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-                                                                <img src="./assets/img/team-4.jpg" alt="user7"></img>
+                                                                <img src="https://i1.wp.com/mundowin.com/wp-content/uploads/2020/02/fix-corrupt-user-profile-windows-pc.png?w=832&ssl=1" alt="user7"></img>
                                                             </a>
                                                         </div>
                                                     </td>
                                                     <td className="align-middle text-center text-sm">
-                                                        <span className="text-xs font-weight-bold"> $2,000 </span>
+                                                        <span className="text-xs font-weight-bold"> 96 </span>
                                                     </td>
                                                     <td className="align-middle">
                                                         <div className="progress-wrapper w-75 mx-auto">
@@ -601,17 +607,17 @@ export const Dashboard = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="card h-100">
                                 <div className="card-header pb-0">
-                                    <h6>Orders overview</h6>
+                                    <h6>Revisión de proyectos</h6>
                                     <p className="text-sm">
                                         <i className="fa fa-arrow-up text-success" aria-hidden="true"></i>
-                                        <span className="font-weight-bold">24%</span> this month
+                                        <span className="font-weight-bold">24%</span> este mes
                                     </p>
                                 </div>
                                 <div className="card-body p-3">
                                     <div className="timeline timeline-one-side">
                                         <div className="timeline-block mb-3">
                                             <span className="timeline-step">
-                                                <i className="material-icons text-success text-gradient">notifications</i>
+                                                <i className="material-icons text-success text-gradient">notificaciones</i>
                                             </span>
                                             <div className="timeline-content">
                                                 <h6 className="text-dark text-sm font-weight-bold mb-0">$2400, Design changes</h6>

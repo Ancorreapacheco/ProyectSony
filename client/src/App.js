@@ -3,6 +3,7 @@ import { Dashboard } from './layout/Dashboard';
 import { Home } from './layout/Home';
 import { Cuenta } from './layout/Count';
 import { Login } from './layout/Login';
+import { Projects } from './layout/Projects';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App(){
@@ -14,6 +15,7 @@ function App(){
           <Route exact path='/dashboard' element={<Dashboard />} />
           <Route exact path='/count' element={< Cuenta />} />
           <Route exact path='/login' element={<Login />} />
+          <Route exact path='/projects' element={<Projects />} />
         </Routes>
       </Fragment>
     </Router>
