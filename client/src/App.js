@@ -4,6 +4,7 @@ import { Home } from './layout/Home';
 import { Cuenta } from './layout/Count';
 import { Login } from './layout/Login';
 import { Projects } from './layout/Projects';
+import { Notifications } from './layout/Notifications';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App(){
@@ -16,6 +17,7 @@ function App(){
           <Route exact path='/count' element={< Cuenta />} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/projects' element={<Projects />} />
+          <Route exact path='/notifications' element={<Notifications />} />
         </Routes>
       </Fragment>
     </Router>
