@@ -35,32 +35,32 @@ export const Dashboard = () => {
                             </Link>
                         </li>
                         <li className ="nav-item">
-                            <a className ="nav-link text-white " href="./pages/tables.html">
+                            <Link className ="nav-link text-white " to="/">
                                 <div className ="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                     <i className ="material-icons opacity-10">table_view</i>
                                 </div>
                                 <span className ="nav-link-text ms-1">Proyectos</span>
-                            </a>
+                            </Link>
                          </li>
                         
                         <li className ="nav-item">
-                            <a className ="nav-link text-white " href="./pages/notifications.html">
+                            <Link className ="nav-link text-white " to="/">
                                 <div className ="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                     <i className ="material-icons opacity-10">notifications</i>
                                 </div>
                                 <span className ="nav-link-text ms-1">Notificaciones</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className ="nav-item mt-3">
                             <h6 className ="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Cuentas</h6>
                         </li>
                         <li className ="nav-item">
-                            <a className ="nav-link text-white " href="./pages/profile.html">
+                            <Link className ="nav-link text-white " to="/count">
                                 <div className ="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                     <i className ="material-icons opacity-10">person</i>
                                 </div>
                                 <span className ="nav-link-text ms-1">Perfil de usuario</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className ="nav-item">
                             <Link className ="nav-link text-white " to="/login">
