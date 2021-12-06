@@ -5,6 +5,7 @@ import { Cuenta } from './layout/Count';
 import { Login } from './layout/Login';
 import { Register } from './layout/Register';
 import { Projects } from './layout/Projects';
+import { Task } from './layout/Task';
 import { Createproject } from './layout/Createproject';
 import { Notifications } from './layout/Notifications';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -20,6 +21,7 @@ function App(){
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/register' element={<Register />} />
           <Route exact path='/projects' element={<Projects />} />
+          <Route exact path='/projects/create/task' element={<Task />} />
           <Route exact path='/projects/create' element={<Createproject />} />
           <Route exact path='/notifications' element={<Notifications />} />
         </Routes>

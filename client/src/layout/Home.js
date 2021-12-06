@@ -307,6 +307,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
+            <Script src = "./js/material-dashboard.min.js"/>
         </div>
     )
 }
