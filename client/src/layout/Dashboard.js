@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Script from '@gumgum/react-script-tag';
 
 import './css/style_main.css';
 import Logo from './images/logosony.png';
@@ -139,36 +140,36 @@ export const Dashboard = () => {
                                                     </div>
                                                     <div className="d-flex flex-column justify-content-center">
                                                         <h6 className="text-sm font-weight-normal mb-1">
-                                                            <span className="font-weight-bold">New message</span> from Laur
+                                                            <span className="font-weight-bold">Nuevo mensaje</span> de Andrés
                                                         </h6>
                                                         <p className="text-xs text-secondary mb-0">
                                                             <i className="fa fa-clock me-1"></i>
-                                                            13 minutes ago
+                                                            hace 13 minutos
                                                         </p>
                                                     </div>
                                                 </div>
                                             </Link>
                                         </li>
                                         <li className="mb-2">
-                                            <a className="dropdown-item border-radius-md" href="javascript:;">
+                                            <Link className="dropdown-item border-radius-md" to="javascript:;">
                                                 <div className="d-flex py-1">
                                                     <div className="my-auto">
                                                         <img src="./assets/img/small-logos/logo-spotify.svg" className="avatar avatar-sm bg-gradient-dark  me-3 "></img>
                                                     </div>
                                                     <div className="d-flex flex-column justify-content-center">
                                                         <h6 className="text-sm font-weight-normal mb-1">
-                                                            <span className="font-weight-bold">New album</span> by Travis Scott
+                                                            <span className="font-weight-bold">Nuevo proyecto</span> por Yulieth
                                                         </h6>
                                                         <p className="text-xs text-secondary mb-0">
                                                             <i className="fa fa-clock me-1"></i>
-                                                            1 day
+                                                            1 día
                                                         </p>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a className="dropdown-item border-radius-md" href="javascript:;">
+                                            <Link className="dropdown-item border-radius-md" to="javascript:;">
                                                 <div className="d-flex py-1">
                                                     <div className="avatar avatar-sm bg-gradient-secondary  me-3  my-auto">
                                                         <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -187,15 +188,15 @@ export const Dashboard = () => {
                                                     </div>
                                                     <div className="d-flex flex-column justify-content-center">
                                                         <h6 className="text-sm font-weight-normal mb-1">
-                                                            Payment successfully completed
+                                                            Pago realizado exitosamente
                                                         </h6>
                                                         <p className="text-xs text-secondary mb-0">
                                                             <i className="fa fa-clock me-1"></i>
-                                                            2 days
+                                                            3 días
                                                         </p>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -757,6 +758,13 @@ export const Dashboard = () => {
                     </div>
                 </div>
             </div>
+            <Script src="./js/material-dashboard.min.js?v=3.0.0" />
+            <Script src="./js/core/popper.min.js" />
+            <Script src="./js/core/bootstrap.min.js" />
+            <Script src="./js/plugins/perfect-scrollbar.min.js" />
+            <Script src="./js/plugins/smooth-scrollbar.min.js" />
+            <Script src="./js/plugins/chartjs.min.js" />
+            <Script async defer src="https://buttons.github.io/buttons.js" />
         </div>
     )
 }
