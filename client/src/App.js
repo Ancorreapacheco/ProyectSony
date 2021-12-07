@@ -9,6 +9,7 @@ import { Task } from './layout/Task';
 import { Createproject } from './layout/Createproject';
 import { Notifications } from './layout/Notifications';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { Aside } from './layout/Aside';
 
 function App(){
   return(
@@ -24,6 +25,8 @@ function App(){
           <Route exact path='/projects/create/task' element={<Task />} />
           <Route exact path='/projects/create' element={<Createproject />} />
           <Route exact path='/notifications' element={<Notifications />} />
+
+          <Route exact path='/aside' element={<Aside />} />
         </Routes>
       </Fragment>
     </Router>
