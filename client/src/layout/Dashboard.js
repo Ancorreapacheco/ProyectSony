@@ -12,8 +12,9 @@ import JI from './images/small-logos/logo-jira.svg';
 import IN from './images/small-logos/logo-invision.svg';
 import { Aside } from './Aside';
 import { NavBar } from './NavBar';
+import { DashboardSummCard } from './DashboardSummCard';
 
-export const Dashboard = () => {
+export const Dashboard = ({infoCard}) => {
     return (
         <div>
             <Aside/>
@@ -23,7 +24,15 @@ export const Dashboard = () => {
                 {/* End Navbar */}
                 <div className="container-fluid py-4">
                     <div className="row">
-                        <div className="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+
+                        {infoCard.map(ele=> (
+                            <DashboardSummCard key={ele.id} infoCard={ele} />
+                            ))
+                        }
+
+
+                        
+                        {/* <div className="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                             <div className="card">
                                 <div className="card-header p-3 pt-2">
                                     <div className="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl mt-n4 position-absolute">
@@ -40,6 +49,7 @@ export const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                             <div className="card">
                                 <div className="card-header p-3 pt-2">
@@ -92,7 +102,8 @@ export const Dashboard = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row mt-4">
+                    <div className="row mt-4"> */}
+
                         <div className="col-lg-4 col-md-6 mt-4 mb-4">
                             <div className="card z-index-2 ">
                                 <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
@@ -113,6 +124,7 @@ export const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-lg-4 col-md-6 mt-4 mb-4">
                             <div className="card z-index-2  ">
                                 <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">

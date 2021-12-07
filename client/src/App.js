@@ -37,12 +37,23 @@ function App() {
     {id:3, imgUrl:'https://3.bp.blogspot.com/-co9IzI0I4mI/XGS3iyQi1sI/AAAAAAAAFo4/RhLWOcJeBvE3XzBIy8akSmTZ5TTGgRJEwCLcBGAs/s1600/maxresdefault.jpg', projectName:'Proyecto #3', title:'Dinámico', description:'Why would anyone pick blue over pink? Pink is obviously a better color.'}
   ]
 
+  //PARA EL COMPONENTE DASHBOARD
+
+  //Aquí envío información para el componente de DashboardSummCard
+
+  const infoCard=[
+    {id:1,icon:'weekend',title:'Proyectos actuales',value:530,var:'+15%',spamTime:' que la semana pasada'},
+    {id:2,icon:'person',title:'Usuarios actuales',value:230,var:'+3%',spamTime:' que el mes pasado'},
+    {id:3,icon:'person',title:'Nuevos clientes',value:'3,462',var:'-2%',spamTime:' que el mes pasado'},
+    {id:4,icon:'weekend',title:'Clientes satisfechos',value:5000,var:'+50%',spamTime:' que la semana pasada'}
+  ]
+
   return (
     <Router>
       <Fragment>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/dashboard" element={<Dashboard infoCard={infoCard} />} />
           <Route exact path="/count" element={<Cuenta dataUser={dataUser} userProjects={userProjects} />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/register" element={<Register />} />
