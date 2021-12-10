@@ -36,7 +36,7 @@ export const Aside =() =>{
                 </Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link text-white active bg-gradient-primary" to="/projects">
+                    <Link className="nav-link text-white " to="/projects"> {/* active bg-gradient-primary */}
                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i className="material-icons opacity-10">table_view</i>
                     </div>
