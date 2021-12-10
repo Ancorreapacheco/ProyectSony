@@ -1,16 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Script from '@gumgum/react-script-tag';
 
 import './css/style_main.css';
-import Logo from './images/logosony.png';
-import XD from './images/small-logos/logo-xd.svg';
-import AT from './images/small-logos/logo-atlassian.svg';
-import SL from './images/small-logos/logo-slack.svg';
-import SP from './images/small-logos/logo-spotify.svg';
-import JI from './images/small-logos/logo-jira.svg';
-import IN from './images/small-logos/logo-invision.svg';
-
 
 export const DashboardSummCard = ({infoCard}) =>{
 
