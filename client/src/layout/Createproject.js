@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './css/style_main.css';
 import './css/nucleo-icons.css';
 import './css/nucleo-svg.css';
-import Logo from './images/logosony.png';
 import { Aside } from './Aside';
 import { NavBar } from './NavBar';
 

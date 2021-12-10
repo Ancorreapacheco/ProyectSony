@@ -1,6 +1,5 @@
 import React from 'react';
 import Script from '@gumgum/react-script-tag';
-import { Link } from 'react-router-dom';
 
 import './css/style_main.css';
 import Logo from './images/logosony.png';

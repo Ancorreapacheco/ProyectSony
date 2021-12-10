@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './css/style_main.css';
-import Logo from './images/logosony.png';
 import AS from './images/small-logos/logo-asana.svg';
 import GI from './images/small-logos/github.svg';
 import AT from './images/small-logos/logo-atlassian.svg';
