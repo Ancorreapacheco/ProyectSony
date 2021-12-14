@@ -1,12 +1,12 @@
-import React from 'react'
-
+import React from 'react';
 
 import './css/style_main.css';
 
 
 export const ProjectCard = ({ projects }) => {
 
-  return <div className="col-xl-3 col-md-6 mb-xl-0 mb-4" key={projects.id}>
+  return (
+  <div className="col-xl-3 col-md-6 mb-xl-0 mb-4" key={projects.id}>
     <div className="card card-blog card-plain">
       <div className="card-header p-0 mt-n4 mx-3">
         <a className="d-block shadow-xl border-radius-xl">
@@ -33,5 +33,5 @@ export const ProjectCard = ({ projects }) => {
         </div>
       </div>
     </div>
-  </div>;
+  </div>)
 };

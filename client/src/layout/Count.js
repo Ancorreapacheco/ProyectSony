@@ -1,8 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
 
 import './css/style_main.css';
-import Logo from './images/logosony.png';
 import Lina from './images/lina.jpg';
 import Kevin from './images/Kevin.jpg';
 import { Aside } from './Aside';

@@ -1,6 +1,5 @@
 import React from 'react';
 import Script from '@gumgum/react-script-tag';
-import { Link } from 'react-router-dom';
 
 import './css/style_main.css';
 import Logo from './images/logosony.png';
@@ -8,6 +7,15 @@ import { Aside } from './Aside';
 import { NavBar } from './NavBar';
 
 export const Home = () => {
+
+    const [data, setData] = React.useState(null);
+
+    React.useEffect(() => {
+        fetch("/server")
+            .then((res) => res.json())
+            .then((data) => setData(data.message));
+    }, []);
+
     return (
         <div>
             <Aside/>
@@ -48,6 +56,7 @@ export const Home = () => {
                     <p>
                         Plataforma desarrollada por Equipo 4 Uninorte
                     </p>
+                    <p>{!data ? "Conectando..." : data}</p> {/*Aquí es solo para saber que si esté conectado el back end */}
                 </footer>
             </main>
             <div className="fixed-plugin">
@@ -57,7 +66,7 @@ export const Home = () => {
                 <div className="card shadow-lg">
                     <div className="card-header pb-0 pt-3">
                         <div className="float-start">
-                            <h5 className="mt-3 mb-0">Material UI Configurator</h5>
+                            <h5 className="mt-3 mb-0">Configuración</h5>
                             <p>See our dashboard options.</p>
                         </div>
                         <div className="float-end mt-4">

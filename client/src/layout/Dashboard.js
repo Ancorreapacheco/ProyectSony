@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Script from '@gumgum/react-script-tag';
 
 import './css/style_main.css';
-import Logo from './images/logosony.png';
 import XD from './images/small-logos/logo-xd.svg';
 import AT from './images/small-logos/logo-atlassian.svg';
 import SL from './images/small-logos/logo-slack.svg';
