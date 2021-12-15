@@ -11,6 +11,7 @@ import DE from './images/small-logos/devto.svg';
 import Lina from './images/lina.jpg';
 import Kevin from './images/Kevin.jpg';
 import { Aside } from './Aside';
+import { CrudEllipsisMenu } from './components/CrudEllipsisMenu';
 
 export const Projects = () => {
     return (
@@ -542,9 +543,7 @@ export const Projects = () => {
                                                         </div>
                                                     </td>
                                                     <td class="align-middle">
-                                                        <button class="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                                                            <i class="fa fa-ellipsis-v text-xs"></i>
-                                                        </button>
+                                                        <CrudEllipsisMenu projectId="9"/>
                                                     </td>
                                                 </tr>
                                             </tbody>
