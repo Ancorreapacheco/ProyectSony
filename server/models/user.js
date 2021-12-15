@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-const { Schema } = mongoose;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     username: String, 
@@ -8,6 +8,6 @@ const userSchema = new Schema({
 });
 
 // Modelo
-const Username = mongoose.model('Username', userSchema);
+const Userdb = mongoose.model('Userdb', userSchema);
 
-module.exports = Username;
+module.exports = Userdb;
