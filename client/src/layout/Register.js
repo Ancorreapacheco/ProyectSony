@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './css/style_main.css';
 
 export const Register = () => {
+
+    const [usernameReg, setUsernameReg] = useState("");
+    const [emailReg, setEmailReg] = useState("");
+    const [passwordReg, setPasswordReg] = useState("");
+
     return (
         <div>
             <div class="container position-sticky z-index-sticky top-0">
@@ -75,15 +80,21 @@ export const Register = () => {
                                             <form role="form">
                                                 <div class="input-group input-group-outline mb-3">
                                                     <label class="form-label">Nombre</label>
-                                                    <input type="text" class="form-control"></input>
+                                                    <input type="text" class="form-control" onChange={(e) => {
+                                                        setUsernameReg(e.target.value);
+                                                    }}></input>
                                                 </div>
                                                 <div class="input-group input-group-outline mb-3">
                                                     <label class="form-label">Email</label>
-                                                    <input type="email" class="form-control"></input>
+                                                    <input type="email" class="form-control" onChange={(e) => {
+                                                        setEmailReg(e.target.value);
+                                                    }}></input>
                                                 </div>
                                                 <div class="input-group input-group-outline mb-3">
                                                     <label class="form-label">Contraseña</label>
-                                                    <input type="password" class="form-control"></input>
+                                                    <input type="password" class="form-control" onChange={(e) => {
+                                                        setPasswordReg(e.target.value);
+                                                    }}></input>
                                                 </div>
                                                 <div class="form-check form-check-info text-start ps-0">
                                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked></input>
