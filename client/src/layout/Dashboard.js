@@ -22,7 +22,6 @@ export const Dashboard = ({infoCard}) => {
                 {/* End Navbar */}
                 <div className="container-fluid py-4">
                     <div className="row">
-
                         {infoCard.map(ele=> (
                             <DashboardSummCard key={ele.id} infoCard={ele} />
                             ))
