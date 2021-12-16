@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require('mongoose');
-const userdb = require('./models/user');
+const userdb = require('./controllers/user');
 require('dotenv').config()
 
 // Inicio
