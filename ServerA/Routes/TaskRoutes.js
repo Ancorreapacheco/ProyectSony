@@ -10,6 +10,7 @@ const Task = require("../models/task");
 router.get("/api/task", async (req, res) => {
     const tasks = await Task.find();
     res.json(tasks);
+    console.log('Info cargada.');
     res.end()
 })
 
@@ -17,7 +18,7 @@ router.get("/api/task", async (req, res) => {
 
 router.get('/api/task/:id', async(req, res) => {
     const task= await Task.findById(req.params.id);
-    res.json(task);
+    res.json(task);    
     res.end();
 })
 
@@ -26,7 +27,8 @@ router.post('/api/task', async (req, res) => {
     const {title, description} = req.body;
     const task= new Task ({title, description});    
     await task.save();
-    res.json({status:'Tarea almacenada'})
+    res.json({status:'Tarea almacenada'});
+    console.log('Tarea almacenada - msj consola')
     res.end();
 })
 
@@ -45,7 +47,7 @@ router.put('/api/task/:id', async(req,res) =>{
 
 router.delete('/api/task/:id', async(req, res) => {
     await Task.findByIdAndDelete(req.params.id);
-    res.json({status:"registro eliminado"});
+    res.json({status:"registro eliminado."});
     res.end();
 })
 
