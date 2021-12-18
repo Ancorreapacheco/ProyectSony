@@ -10,6 +10,9 @@ import { Task } from './layout/Task';
 import { Createproject } from './layout/Createproject';
 import { Notifications } from './layout/Notifications';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Tareas from './layout/Tareas';
+
+
 
 function App(){
   return(
@@ -17,8 +20,8 @@ function App(){
       <Fragment>
         <Routes>
           <Route exact path='/' element={<Home/>} />
-          <Route exact path='/dashboard' element={<Dashboard />} />
-          <Route exact path='/count' element={< Cuenta />} />
+          {/* <Route exact path='/dashboard' element={<Dashboard />} /> */}
+          {/* <Route exact path='/count' element={< Cuenta />} /> */}
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/register' element={<Register />} />
           <Route exact path='/projects' element={<Projects />} />
@@ -26,6 +29,9 @@ function App(){
           <Route exact path='/projects/create' element={<Createproject />} />
           <Route exact path='/report' element={<Report />} />
           <Route exact path='/notifications' element={<Notifications />} />
+          <Route exact path='/task' element={<Tareas/>} />
+          
+          
         </Routes>
       </Fragment>
     </Router>
