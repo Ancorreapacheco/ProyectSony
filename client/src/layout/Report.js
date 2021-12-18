@@ -127,7 +127,7 @@ export const Report = () => {
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'initial' }}>
                         <label for="name">
-                            Estado: &emsp;&emsp;
+                            Filtrar por nombre: &emsp;&emsp;
                         </label>
                         <input type="text" id="name"></input>
                         <div style={{ padding: '0 25px' }}>
@@ -135,27 +135,21 @@ export const Report = () => {
                         </div>
                     </div>
                     <br></br>
-                    <br></br>
-                        <hr></hr>
-                        <h2>
-                            Listar Proyectos
-                        </h2>
-                        <hr></hr>
-                    
                     <div style={{ display: 'flex', justifyContent: 'initial' }}>
-                        <label for="name">
-                            Actividad: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <label for="estado">
+                            Estado: &emsp;&emsp;
                         </label>
-                        <input type="text" id="name"></input>
+                        <input type="text" id="estado"></input>
                         <div style={{ padding: '0 25px' }}>
-                            <button style={{ borderRadius: '10px' }}><i className="fas fa-check-circle"></i></button>
+                            <button style={{ borderRadius: '10px' }}><i className="fas fa-search"></i></button>
                         </div>
                     </div>
                     <br></br>
-                    <br></br>
-                    <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <button style={{ borderRadius: '7px', width: '200px', height: '50px', background: '#e91e63', color: 'white'}}>Guardar actividad</button>
-                    </div>
+                        <hr></hr>
+                        <h4>
+                            Listar Proyectos
+                        </h4>
+                        <hr></hr>
                     <br></br>
                     <br></br>
                     <div style={{ display: 'flex', justifyContent: 'center', width: '100hv' }}>
