@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component, useEffect} from 'react';
 
 import './css/style_main.css';
 import Lina from './images/lina.jpg';
@@ -6,8 +6,18 @@ import Kevin from './images/Kevin.jpg';
 import { Aside } from './Aside';
 import { NavBar } from './NavBar';
 import { ProjectCard } from './CartasProyectos';
+import Cookies from "universal-cookie";
+
+const cookies = new Cookies();
 
 export const Cuenta = ({dataUser, userProjects}) => {
+    //Si no hay usuario en cookies, entonces lo envío al Login
+    useEffect(() => {
+        if(!cookies.get('user')){
+            window.location.href="/login";
+        }
+        
+      }, []);
     return (
         <div>           
             <Aside/>

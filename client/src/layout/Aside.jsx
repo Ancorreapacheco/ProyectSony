@@ -44,14 +44,14 @@ export const Aside =() =>{
                 </Link>
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
                 <Link className="nav-link text-white" to="/report">
                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i className="material-icons opacity-10">report</i>
                     </div>
                     <span className="nav-link-text ms-1">Reportes</span>
                 </Link>
-            </li>
+            </li> */}
 
             <li className="nav-item">
                 <Link className="nav-link text-white " to="/task">

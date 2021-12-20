@@ -12,6 +12,9 @@ import Kevin from "./images/Kevin.jpg";
 import { Aside } from "./Aside";
 import { CrudEllipsisMenu } from "./components/CrudEllipsisMenu";
 import { NavBar } from "./NavBar";
+import Cookies from "universal-cookie";
+
+const cookies = new Cookies();
 
 export default class GestionProyectos extends React.Component {
   constructor() {
@@ -126,6 +129,9 @@ export default class GestionProyectos extends React.Component {
   componentDidMount() {
     //Esto es una función que permite ejecutar algo apenas se renderiza el componente
     this.getTasks();
+    if (!cookies.get("user")) {
+      window.location.href = "/login";
+    }
   }
 
   handleChange(e) {

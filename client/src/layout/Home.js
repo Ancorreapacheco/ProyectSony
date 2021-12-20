@@ -1,20 +1,34 @@
-import React from 'react';
+import React, {Component, useEffect} from 'react';
 import Script from '@gumgum/react-script-tag';
 
 import './css/style_main.css';
 import Logo from './images/logosony.png';
 import { Aside } from './Aside';
 import { NavBar } from './NavBar';
+import Cookies from "universal-cookie";
+
+
 
 export const Home = () => {
 
     const [data, setData] = React.useState(null);
+    const cookies = new Cookies();
 
     React.useEffect(() => {
         fetch("/server")
             .then((res) => res.json())
             .then((data) => setData(data.message));
     }, []);
+
+    console.log("Cookies: " + cookies.get('user') +" " + cookies.get('userType') );
+
+    //Si no hay usuario en cookies, entonces lo envío al Login
+    useEffect(() => {
+        if(!cookies.get('user')){
+            window.location.href="/login";
+        }
+        
+      }, []);
 
     return (
         <div>
@@ -33,7 +47,7 @@ export const Home = () => {
                         <br></br>
                         <br></br>
                         <h4 style={{ textAlign: 'justify' , color: 'black'}}>
-                            Sony es una plataforma dedicada a gestionar y facilitar el anvance de trabajo en los equipos.
+                            Sony es una plataforma dedicada a gestionar y facilitar el avance de trabajo en los equipos.
                             Colaborar, gestionar proyectos, y alcanzar nuevos picos de productividad deseada.
                             Desde diversos lugares del globo hasta el trabajo en casa, Sony genera nuevas formas en que tu equipo
                             pueda trabajar en colaboración y de forma única.
