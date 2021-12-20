@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Tareas from './layout/Tareas';
 import GestionProyectos from './layout/GestionProyectos';
 import LogSesion from './layout/LogSesion';
+import Activities from './layout/Activities';
 
 
 
@@ -65,6 +66,7 @@ function App(){
           <Route exact path='/report' element={<Report />} />
           <Route exact path='/notifications' element={<Notifications />} />
           <Route exact path='/task' element={<Tareas/>} />
+          <Route exact path='/activities' element={<Activities/>} />
           
           
         </Routes>

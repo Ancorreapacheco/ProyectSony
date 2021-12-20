@@ -10,6 +10,7 @@ const router = express.Router();
 
 const Task = require("../models/task");
 const userSchema = require("../models/userSchema");
+const activitiesSchema = require("../models/activitiesSchema")
 
 //----------RUTAS PARA LOS PROYTECTOS (MAL LLAMADOS TAREAS)---------------------
 //Obtener todas las tareas
@@ -58,15 +59,7 @@ router.delete("/projects/:id", async (req, res) => {
 
 //-------------------USUARIOS------------------------//
 
-// Obtener todos los usuarios
-/* router.get("/login", async (req, res) => {
-    const userschema = await userSchema.find();
-    res.json(userschema);
-    console.log('Info cargada toda');
-    res.end()
-}) */
-
-//Obtener usuarios por ID vía POST para LogIn
+//Obtener usuarios por ID vía get para LogIn
 
 router.get("/login/:email/:password", async (req, res) => {
   console.log("parametro por post:" + req.params.email);
@@ -94,16 +87,6 @@ router.get("/login/:email/:password", async (req, res) => {
   res.end();
 });
 
-//Obtener usuarios por ID y password
-
-router.post("/login/:email:password", async (req, res) => {
-  console.log("Email:" + req.params.email + "pass: " + req.params.password);
-  const query = { email: req.params.email, password: req.params.password };
-  const userschema = await userSchema.find(query);
-  res.json(userschema);
-  console.log(userschema);
-  res.end();
-});
 
 //Agregar usuarios
 
@@ -115,5 +98,58 @@ router.post("/users", async (req, res) => {
   console.log("Usuario almacenano - Msj Consola");
   res.end;
 });
+
+//----------RUTAS PARA LAS ACTIVIDADES POR PROYECTO()---------------------
+//Obtener todas las actividades
+router.get("/activities", async (req, res) => {
+  const activities = await activitiesSchema.find();
+  res.json(activities);
+  console.log("Info cargada.");
+  res.end();
+});
+
+//Obtener actividades por ID
+
+router.get("/activities/:id", async (req, res) => {
+  const activities = await activitiesSchema.findById(req.params.id);
+  res.json(activities);
+  res.end();
+});
+
+//Crear tareas
+router.post("/activities", async (req, res) => {
+  const { title, description, start_date, finish_date, project_id, project_name } = req.body;
+  const activities = new activitiesSchema({ title, description, start_date, finish_date, project_id, project_name });
+  await activities.save();
+  res.json({ status: "activities almacenada" });
+  console.log("Tarea almacenada - msj consola");
+  res.end();
+});
+
+//Actualizar activities por ID
+
+router.put("/activities/:id", async (req, res) => {
+  const { title, description, start_date, finish_date, project_id, project_name } = req.body;
+  const updateActivity = { title, description, start_date, finish_date, project_id, project_name };
+  await activitiesSchema.findByIdAndUpdate(req.params.id, updateActivity);
+  res.json({ status: "activities Modificada" });
+  res.end();
+});
+
+//Eliminar tareas por ID
+
+router.delete("/activities/:id", async (req, res) => {
+  await activitiesSchema.findByIdAndDelete(req.params.id);
+  res.json({ status: "registro eliminado." });
+  res.end();
+});
+
+
+
+
+
+
+
+
 
 module.exports = router;
