@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component, useEffect} from 'react';
 import Script from '@gumgum/react-script-tag';
 
 import './css/style_main.css';
@@ -11,8 +11,20 @@ import IN from './images/small-logos/logo-invision.svg';
 import { Aside } from './Aside';
 import { NavBar } from './NavBar';
 import { DashboardSummCard } from './DashboardSummCard';
+import Cookies from "universal-cookie";
+
+const cookies = new Cookies();
 
 export const Dashboard = ({infoCard}) => {
+
+    //Si no hay usuario en cookies, entonces lo envío al Login
+    useEffect(() => {
+        if(!cookies.get('user')){
+            window.location.href="/login";
+        }
+        
+      }, []);
+
     return (
         <div>
             <Aside/>
@@ -26,81 +38,6 @@ export const Dashboard = ({infoCard}) => {
                             <DashboardSummCard key={ele.id} infoCard={ele} />
                             ))
                         }
-
-
-                        
-                        {/* <div className="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                            <div className="card">
-                                <div className="card-header p-3 pt-2">
-                                    <div className="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl mt-n4 position-absolute">
-                                        <i className="material-icons opacity-10">weekend</i>
-                                    </div>
-                                    <div className="text-end pt-1">
-                                        <p className="text-sm mb-0 text-capitalize">Proyectos actuales</p>
-                                        <h4 className="mb-0">530</h4>
-                                    </div>
-                                </div>
-                                <hr className="dark horizontal my-0"></hr>
-                                <div className ="card-footer p-3">
-                                <p className ="mb-0"><span className ="text-success text-sm font-weight-bolder">+15% </span>que la semana pasadak</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                            <div className="card">
-                                <div className="card-header p-3 pt-2">
-                                    <div className="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4 position-absolute">
-                                        <i className="material-icons opacity-10">person</i>
-                                    </div>
-                                    <div className="text-end pt-1">
-                                        <p className="text-sm mb-0 text-capitalize">Usuarios actuales</p>
-                                        <h4 className="mb-0">230</h4>
-                                    </div>
-                                </div>
-                                <hr className="dark horizontal my-0"></hr>
-                                <div className ="card-footer p-3">
-                                <p className ="mb-0"><span className ="text-success text-sm font-weight-bolder">+3% </span>que el mes pasado</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                            <div className="card">
-                                <div className="card-header p-3 pt-2">
-                                    <div className="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
-                                        <i className="material-icons opacity-10">person</i>
-                                    </div>
-                                    <div className="text-end pt-1">
-                                        <p className="text-sm mb-0 text-capitalize">Nuevos clientes</p>
-                                        <h4 className="mb-0">3,462</h4>
-                                    </div>
-                                </div>
-                                <hr className="dark horizontal my-0"></hr>
-                                <div className ="card-footer p-3">
-                                    <p className="mb-0"><span className="text-danger text-sm font-weight-bolder">-2%</span> que el mes pasado</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-sm-6">
-                            <div className="card">
-                                <div className="card-header p-3 pt-2">
-                                    <div className="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute">
-                                        <i className="material-icons opacity-10">weekend</i>
-                                    </div>
-                                    <div className="text-end pt-1">
-                                        <p className="text-sm mb-0 text-capitalize">Cleintes satisfechos</p>
-                                        <h4 className="mb-0">5000</h4>
-                                    </div>
-                                </div>
-                                <hr className="dark horizontal my-0"></hr>
-                                <div className ="card-footer p-3">
-                                <p className ="mb-0"><span className ="text-success text-sm font-weight-bolder">+5% </span>que ayer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-4"> */}
-
                         <div className="col-lg-4 col-md-6 mt-4 mb-4">
                             <div className="card z-index-2 ">
                                 <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
