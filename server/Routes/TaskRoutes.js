@@ -64,9 +64,9 @@ router.delete("/projects/:id", async (req, res) => {
 router.get("/login/:email/:password", async (req, res) => {
   console.log("parametro por post:" + req.params.email);
   console.log("parametro por post:" + req.params.password);
-
+  console.log(md5(req.params.password))
   const userschema = await userSchema.findOne({
-    email: req.params.email,
+    email: req.params.email,    
     password: md5(req.params.password),
   });
 
