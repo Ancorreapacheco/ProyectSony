@@ -57,7 +57,7 @@ export default class LogSesion extends React.Component {
               window.location.href='/';
           }
       })
-      .catch((error) => console.log(error));
+      .catch((error) => console.log(error, ' ennre en error'));
   };
 
   componentDidMount() {
