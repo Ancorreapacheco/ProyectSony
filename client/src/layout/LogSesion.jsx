@@ -35,11 +35,12 @@ export default class LogSesion extends React.Component {
   //e10adc3949ba59abbe56e057f20f883e
 
    logIn = async (e) => {
-    const location = window.location.origin === 'https://sonyproyectofront.onrender.com' ? 'https://sonyproyectofront.onrender.com' : 'http://localhost:4000';
+    //const location = window.location.origin === 'https://sonyproyectofront.onrender.com' ? 'https://sonyproyectofront.onrender.com' : 'http://localhost:4000';
     await axios
       .get(
         //`http://localhost:4000/login/${this.state.email}/${this.state.password}`
-        `${location}/login/${this.state.email}/${this.state.password}`
+        //`${location}/login/${this.state.email}/${this.state.password}`
+        `https://sonyproyectofront.onrender.com/login/${this.state.email}/${this.state.password}`
       )
       .then((response) => {
         console.log(response.data);
