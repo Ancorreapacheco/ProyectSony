@@ -6,6 +6,7 @@ import Logo from './images/logosony.png';
 import { Aside } from './Aside';
 import { NavBar } from './NavBar';
 import Cookies from "universal-cookie";
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -13,6 +14,7 @@ export const Home = () => {
 
     const [data, setData] = React.useState(null);
     const cookies = new Cookies();
+    const navigate = useNavigate()
 
     React.useEffect(() => {
         fetch("/server")
@@ -25,7 +27,8 @@ export const Home = () => {
     //Si no hay usuario en cookies, entonces lo envío al Login
     useEffect(() => {
         if(!cookies.get('user')){
-            window.location.href="/login";
+            //window.location.href="/login";
+            navigate('/login')
         }
         
       }, []);
@@ -137,10 +140,10 @@ export const Home = () => {
                     <div className="w-100 text-center">
                         <a className="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star creativetimofficial/material-dashboard on GitHub">Star</a>
                         <h6 className="mt-3">Thank you for sharing!</h6>
-                        <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard" className="btn btn-dark mb-0 me-2" target="_blank">
+                        <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard" className="btn btn-dark mb-0 me-2" target="_blank" rel="noreferrer">
                             <i className="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
                         </a>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-dashboard" className="btn btn-dark mb-0 me-2" target="_blank">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-dashboard" className="btn btn-dark mb-0 me-2" target="_blank" rel="noreferrer">
                             <i className="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
                         </a>
                     </div>
