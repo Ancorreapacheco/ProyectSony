@@ -12,7 +12,6 @@ import Tareas from './layout/Tareas';
 import GestionProyectos from './layout/GestionProyectos';
 import LogSesion from './layout/LogSesion';
 import Activities from './layout/Activities';
-import DefaultC from './layout/DefaultC';
 
 
 
@@ -59,8 +58,7 @@ function App(){
           <Route exact path='/' element={<Home/>} />
           <Route exact path="/dashboard" element={<Dashboard infoCard={infoCard} />} />
           <Route exact path="/count" element={<Cuenta dataUser={dataUser} userProjects={userProjects} />} />
-          <Route exact path='/login' element={<DefaultC />} />
-          {/* <Route exact path='/login' element={<LogSesion />} /> */}
+          <Route exact path='/login' element={<LogSesion />} />
           <Route exact path='/register' element={<Register />} />
           <Route exact path='/projects' element={<GestionProyectos />} />
           <Route exact path='/projects/create/task' element={<Task />} />
